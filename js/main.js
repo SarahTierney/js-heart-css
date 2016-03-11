@@ -1,23 +1,22 @@
 var $header = $('header');
-$header.addClass('masthead');
-
 var $h1 = $('h1');
-$h1.removeClass('big-heading').addClass('logo');
-
 var $main = $('main');
-$main.addClass('wrapper') ('main p:first-child');
-
 var $h2 = $('h2');
-$h2.addClass('slug-head');
-
 var $mainList = $('mainList');
-$mainList.addClass('slug-list');
-
 var $img = $('img');
+var $firstList = $('main li:first-child');
+var $lastList = $('main li:last-child');
+var $dl = $('dl');
+var $dt = $('dt');
+
+$header.addClass('masthead');
+$h1.removeClass('big-heading').addClass('logo');
+$main.addClass('wrapper')('main p:first-child');
+$h2.addClass('slug-head');
+$mainList.addClass('slug-list');
 $img.addClass('slug.img');
-
-var $firstList = $('main p:first-child');
 $firstList.addClass('slug-list-first');
-
-var $lastList = $('main p:last-child');
-$lastList.addClass('slug-list-first');
+$lastList.addClass('slug-list-last');
+$dl.addClass('classification');
+$dt.removeClass('big-label');
+$lastList.show();
