@@ -9,3 +9,9 @@ $main.addClass('wrapper') ('main p:first-child');
 
 var $h2 = $('h2');
 $h2.addClass('slug-head');
+
+var $mainList = $('mainList');
+$mainList.addClass('slug-list');
+
+var $img = $('img');
+$img.addClass('slug.img');
