@@ -15,3 +15,9 @@ $mainList.addClass('slug-list');
 
 var $img = $('img');
 $img.addClass('slug.img');
+
+var $firstList = $('main p:first-child');
+$firstList.addClass('slug-list-first');
+
+var $lastList = $('main p:last-child');
+$lastList.addClass('slug-list-first');
